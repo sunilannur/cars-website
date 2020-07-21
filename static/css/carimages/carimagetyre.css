@@ -1,0 +1,190 @@
+.leadboard-mg {
+    position: relative;
+    height: 170px;
+    overflow: hidden;
+    transition: height .5s;
+    background-color: #fff;
+    margin-top: -15px
+}
+
+.leadboard-mg:after {
+    -webkit-animation: animatelbBg 30s linear infinite;
+    animation: animatelbBg 30s linear infinite;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 3483px;
+    height: 150px;
+    display: block;
+    background-image: url(https://imgd.aeplcdn.com/0x0/cw/es/mg/hector/leaderboard/lb-bg.png);
+    background-repeat: repeat-x;
+    background-position: 0;
+    z-index: 0
+}
+
+.lb__block {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 93px 10px 50px
+}
+
+.lb-car-container {
+    position: relative;
+    z-index: 2;
+    top: 10px
+}
+
+.lb-car-container img {
+    width: 292px;
+    height: 112px
+}
+
+.lb__tyre1, .lb__tyre2 {
+    -webkit-animation: wheelSpin 2s infinite linear forwards;
+    animation: wheelSpin 2s infinite linear forwards;
+    width: 32px;
+    height: 32px;
+    position: absolute
+}
+
+.lb__tyre1 {
+    left: 42px;
+    bottom: 10px;
+    background: url(https://imgd.aeplcdn.com/0x0/cw/es/mg/hector/leaderboard/rear-tyre.png) center no-repeat;
+    background-size: contain
+}
+
+.lb__tyre2 {
+    right: 47px;
+    bottom: 10px;
+    background: url(https://imgd.aeplcdn.com/0x0/cw/es/mg/hector/leaderboard/front-tyre.png) center no-repeat;
+    background-size: contain
+}
+
+.lb__content {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex: 1;
+    flex-grow: 1;
+    position: relative;
+    height: 100%;
+    z-index: 2
+}
+
+.lb__text {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: 700;
+    color: #1a1a1a;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 515px;
+    text-align: left;
+    line-height: 30px
+}
+
+.lb-btn, .lb__supporting-text {
+    color: #fff;
+    border-radius: 3px
+}
+
+.lb-btn {
+    padding: 11px 38px;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: #e53012;
+    text-align: center;
+    z-index: 2
+}
+
+.lb-btn:hover {
+    text-decoration: none
+}
+
+.lb__supporting-text {
+    position: absolute;
+    font-size: 10px;
+    right: 10px;
+    top: 5px;
+    display: inline-block;
+    padding: 1px 5px;
+    background-color: #aaa
+}
+
+.lb__condition-text {
+    position: absolute;
+    font-size: 9px;
+    color: #aaa;
+    right: 10px;
+    bottom: 5px;
+    width: 49px
+}
+
+.lb__car-logo {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    height: 21px;
+    width: 79px
+}
+
+@-webkit-keyframes animatelbBg {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    to {
+        -webkit-transform: translate(-1024px, 0);
+        transform: translate(-1024px, 0)
+    }
+}
+
+@keyframes animatelbBg {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    to {
+        -webkit-transform: translate(-1024px, 0);
+        transform: translate(-1024px, 0)
+    }
+}
+
+@-webkit-keyframes wheelSpin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes wheelSpin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}

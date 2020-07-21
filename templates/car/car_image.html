@@ -1,0 +1,19 @@
+{% extends 'frontend/base/base.html' %}
+{% load static %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/carimages/carimagetyre.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="leadboard-mg" data-role="inview-imp" data-event="CWNonInteractive" data-action="leaderboard_shown"
+         data-cat="Mg_Hector_Plus_leaderboard_d" data-label="Mg Hector Plus">
+        <div class="lb__block">
+            <div class="lb-car-container">
+                <img src="https://imgd.aeplcdn.com/0x0/cw/es/mg/hector/leaderboard/car.png"
+                     alt="Mg Hector Plus" title="Mg Hector Plus">
+                <span class="lb__tyre1"></span>
+                <span class="lb__tyre2"></span>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

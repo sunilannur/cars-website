@@ -1,0 +1,2 @@
+
+ssh -i "cars.pem" ubuntu@18.196.103.146

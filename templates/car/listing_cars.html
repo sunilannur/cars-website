@@ -1,0 +1,83 @@
+{% extends 'base/base.html' %}
+
+
+{% block content %}
+    <h3 class="box-title">List of Vehicles</h3>
+
+
+    {% for each in car %}
+        <section class="content">
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+
+                    <div class="card card-outline card-info">
+                        <div class="card-header">
+
+
+                            <div class="col-md-6">
+                                <img class="img-fluid"
+                                     src=" {{ each.car_image.url }}"
+                                     alt="Photo">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h2>{{ each.name }}</h2>
+                                    </div>
+                                    <div class="col-md-6">
+
+                                        <a class="btn btn-app">
+                                            <span class="badge bg-danger">531</span>
+                                            <i class="fas fa-heart"></i> Likes
+                                        </a>
+                                    </div>
+                                </div>
+                                <h2><label>price:</label>
+                                    <small>${{ each.price }}
+                                    </small>
+                                </h2>
+                                <h2>{{ each.detail }}</h2>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Ext.Color:</label>{{ each.exterior_color }}
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Int.Color:</label>{{ each.interior_color }}
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Transmission:</label>{{ each.transmission }}
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Drivetrain:</label>{{ each.drivetrain }}
+                                        </div>
+                                    </div>
+
+
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-success btn-group-sm">Check
+                                            Availability
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-block btn-info btn-group-sm">Call</button>
+                                    </td>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    {% endfor %}
+
+{% endblock %}

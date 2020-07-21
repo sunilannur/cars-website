@@ -1,0 +1,208 @@
+{% load static %}
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="{% static 'dist/img/user2-160x160.jpg' %}" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>{{ request.user.username }}</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>
+        <!-- search form -->
+
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">MAIN NAVIGATION</li>
+            <li><a href="#"><i class="fa fa-book"></i> <span>Dashboard</span></a></li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-edit"></i> <span>Maker</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="{% url 'website:maker' %}"><i class="fa fa-circle-o"></i> Add</a>
+                    </li>
+                    <li class="active"><a href="{% url 'website:maker_list' %}"><i class="fa fa-circle-o"></i> List</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-user"></i> <span>Model</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="{% url 'website:model' %}"><i class="fa fa-circle-o"></i> Add</a>
+                    </li>
+                    <li class="active"><a href="{% url 'website:model_list' %}"><i class="fa fa-circle-o"></i> List</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-user-circle"></i> <span>Color</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="{% url 'website:color' %}"><i class="fa fa-circle-o"></i> Add</a>
+                    </li>
+                    <li class="active"><a href="{% url 'website:color_list' %}"><i class="fa fa-circle-o"></i> List</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-edit"></i> <span>Transmission</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="{% url 'website:transmission' %}"><i class="fa fa-circle-o"></i> Add</a>
+                    </li>
+                    <li class="active"><a href="{% url 'website:transmission_list' %}"><i class="fa fa-circle-o"></i>
+                        List</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-user-circle"></i> <span>Cylinder</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="{% url 'website:cylinder' %}"><i class="fa fa-circle-o"></i> Add</a>
+                    </li>
+                    <li class="active"><a href="{% url 'website:cylinder_list' %}"><i class="fa fa-circle-o"></i>
+                        List</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-signal"></i> <span>DriveTrain</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="{% url 'website:drive_train' %}"><i class="fa fa-circle-o"></i> Add</a>
+                    </li>
+                    <li class="active"><a href="{% url 'website:driven_type_list' %}"><i class="fa fa-circle-o"></i>
+                        List</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-usb"></i> <span>SellerType</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="{% url 'website:seller_type' %}"><i class="fa fa-circle-o"></i> Add</a>
+                    </li>
+                    <li class="active"><a href="{% url 'website:seller_type_list' %}"><i class="fa fa-circle-o"></i>
+                        List</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-edit"></i> <span>Fuel</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="{% url 'website:fuel' %}"><i class="fa fa-circle-o"></i> Add</a>
+                    </li>
+                    <li class="active"><a href="{% url 'website:fuel_list' %}"><i class="fa fa-circle-o"></i> List</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-user-secret"></i> <span>Body</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="active"><a href="{% url 'website:body' %}"><i class="fa fa-circle-o"></i> Add</a>
+                    </li>
+                    <li class="active"><a href="{% url 'website:body_list' %}"><i class="fa fa-circle-o"></i> List</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+
+{#            <li class="treeview">#}
+{#                <a href="#">#}
+{#                    <i class="fa fa-user-secret"></i> <span>CAR</span>#}
+{#                    <span class="pull-right-container">#}
+{#              <i class="fa fa-angle-left pull-right"></i>#}
+{#            </span>#}
+{#                </a>#}
+{#                <ul class="treeview-menu">#}
+{#                    <li class="active"><a href="{% url 'website:PostCar' %}"><i class="fa fa-circle-o"></i> Add</a>#}
+{#                    </li>#}
+{#                    <li class="active"><a href="{% url 'website:listing_car' %}"><i class="fa fa-circle-o"></i> List</a>#}
+{#                    </li>#}
+{##}
+{##}
+{#                </ul>#}
+{#            </li>#}
+
+
+        </ul>
+    </section>
+</aside>

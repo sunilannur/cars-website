@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Car Website | Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="{% static 'bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static '/bower_components/font-awesome/css/font-awesome.min.css' %}">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="{% static 'bower_components/Ionicons/css/ionicons.min.css' %}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{% static 'dist/css/AdminLTE.min.css' %}">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="{% static 'plugins/iCheck/square/blue.css' %}">
+    <link rel="stylesheet" href="{% static 'login/login.css' %}">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+    <!-- Google Font -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box signupwidth">
+    <div class="login-logo">
+        <a href="../../index2.html"><b>Car Website </b> </a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+        <p class="login-box-msg">Sign Up</p>
+        {% if message %}
+            <p class="text-danger text-center">{{ message }}</p>
+        {% endif %}
+
+        <form action="{% url 'website:signup' %}" method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control loginusername" name="username" placeholder="Username"
+                               required id="id_username" autofocus=""
+                               height="40px">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group has-feedback">
+                        {#                                                                 <span class="input-group-addon"><i#}
+                        {#                                                                         class="glyphicon glyphicon-envelope color-blue"></i></span>#}
+                        <input type="email" class="form-control loginusername" id="email" name="email"
+                               placeholder="Email"
+                               height="40px" required>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group has-feedback">
+                        <span class="form-mobileprefix">+965</span>
+                        <input type="text" class="form-control loginusername phonepadding onlynumber" name="phone"
+                               placeholder="Phone"
+                               height="40px" required>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12">
+                    <div class="form-group has-feedback">
+                        <input type="password" class="form-control loginusername" name="password" placeholder="Password"
+
+                               height="40px"
+                               id="pass1" required>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="form-group has-feedback">
+                        <input type="password" class="form-control loginusername" name="confirm_password"
+
+                               placeholder="Confirm Password" height="40px" id="pass2"
+                               onkeyup="checkPass(); return false;"
+                               required>
+                    </div>
+                </div>
+                <div id="error-nwl"></div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-md btn-block loginusername buttoncolor"><i
+                    class="ft-unlock"></i>
+                SIGN UP
+            </button>
+
+
+            <a href="/login" class="btn btn-primary btn-md btn-block loginusername buttoncolor"><i class="ft-unlock">BACK</i>
+
+            </a>
+
+
+            <div class="form-info">
+                <p class="text-center p-b-10">By Register I agree to receive emails.</p>
+            </div>
+
+
+        </form>
+
+        <br>
+
+
+    </div>
+
+</div>
+
+
+<!-- jQuery 3 -->
+<script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="{% static 'bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+<script>
+    $("#id_username").change(function () {
+        var username = $(this).val();
+
+        $.ajax({
+            url: '/ajax/validate_username/',
+            data: {
+                'username': username
+            },
+            dataType: 'json',
+            success: function (data) {
+                if (data.is_taken) {
+                    swal("A user with this username already exists.");
+                }
+            }
+        });
+
+    });
+</script>
+<script>
+    $(function () {
+        $('body').on('keydown', '.onlynumber', function (e) {
+            -1 !== $.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) || /65|67|86|88/.test(e.keyCode) && (!0 === e.ctrlKey || !0 === e.metaKey) || 35 <= e.keyCode && 40 >= e.keyCode || (e.shiftKey || 48 > e.keyCode || 57 < e.keyCode) && (96 > e.keyCode || 105 < e.keyCode) && e.preventDefault()
+        });
+    });
+
+
+    function checkPass() {
+        var pass1 = document.getElementById('pass1');
+        var pass2 = document.getElementById('pass2');
+        var message = document.getElementById('error-nwl');
+        var goodColor = "#66cc66";
+        var badColor = "#ff6666";
+
+        if (pass1.value.length > 5 && pass2.value.length > 5) {
+            pass1.style.backgroundColor = goodColor;
+            message.style.color = goodColor;
+            message.innerHTML = ""
+
+            if (pass1.value === pass2.value) {
+                pass2.style.backgroundColor = goodColor;
+                message.style.color = goodColor;
+                message.innerHTML = ""
+
+
+            }
+            else {
+                pass2.style.backgroundColor = badColor;
+                message.style.color = badColor;
+                message.innerHTML = " These passwords don't match"
+            }
+        }
+        else {
+            pass1.style.backgroundColor = badColor;
+            message.style.color = badColor;
+            message.innerHTML = " you have to enter at least 6 digit!"
+        }
+
+    }
+</script>
+
+</body>
+</html>

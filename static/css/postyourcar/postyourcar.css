@@ -1,0 +1,15 @@
+.datepicker {
+    width: 100% !important;
+
+    margin: 0 20px 20px 20px !important;
+
+    height: 4rem !important;
+}
+
+.height {
+    height: calc(4rem + 2px) !important;
+}
+
+.labelmargin {
+    margin-left: 5px;
+}

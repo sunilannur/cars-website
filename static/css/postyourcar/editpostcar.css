@@ -1,0 +1,12 @@
+.phonenumber {
+    width: 79%;
+    margin-left: 1%;
+}
+
+.countrycode {
+    width: 16%;
+    margin-left: 2%;
+}
+.labelmargin {
+    margin-left: 5px;
+}

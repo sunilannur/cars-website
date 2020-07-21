@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Classified Plus</title>
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css" />
+<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css" />
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/price_range_style.css">
+</head>
+<body class="iner_page listing_left_sidebar">
+<div class="topbar"> 
+  <!-- Header  -->
+  <div class="header">
+    <div class="container po-relative">
+      <nav class="navbar navbar-expand-lg hover-dropdown header-nav-bar"> <a href="/" class="navbar-brand"><img src="images/logo2.png" alt="Classified Plus"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#h5-info" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="h5-info">
+          <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link" href="/"  aria-haspopup="true" aria-expanded="false"> Home </a>
+            <li class="nav-item"> <a class="nav-link"  href="04-Category-Page.html">About Us</a></li>
+            <li class="nav-item"> <a class="nav-link"  href="04-Category-Page.html">Services</a></li>
+            <li class="nav-item"> <a class="nav-link"  href="04-Category-Page.html">Contact us</a></li>
+          </ul>
+          <div class="header_r d-flex">
+            <div class="loin"> <a class="nav-link" href="#" data-toggle="modal" data-target="#login"><i class="fa fa-user m-r-5"></i>Register/Sign In</a>  </div>
+            <ul class="ml-auto post_ad">
+              <li class="nav-item search"><a class="nav-link" href="/Sell">Sell Your Car</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+    <!-- Modal -->
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Login to Cars</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><img src="images/close.png" alt="Cars"></span> </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control" name="username" placeholder="Username">
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="form-group has-feedback">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+			<button type="submit" class="buttons login_btn" name="login" value="Login">
+				Continue 
+			</button>
+		</div>
+          <div class="form-info">
+			<div class="md-checkbox">
+				<input type="checkbox" name="rememberme" id="rememberme" value="forever">
+				<label for="rememberme" class="">Remember me</label>
+			</div>
+			<div class="forgot-password">
+				<a href="#">Forgot password?</a>
+			</div>
+		</div>
+          
+        </div>
+        <div class="register text-center">Not a member yet? <a href="#" data-toggle="modal" data-target="#register">Register</a></div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Modal -->
+  <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Login to Classifieds Plus</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><img src="images/close.png" alt="Classified Plus"></span> </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control" name="username" placeholder="Username">
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="form-group has-feedback">
+                <input type="number" class="form-control" name="phone" placeholder="Phone">
+              </div>
+            </div>
+            
+            <div class="col-sm-12">
+              <div class="form-group has-feedback">
+                <input type="Email" class="form-control" id="Email" name="Email" placeholder="Email">
+              </div>
+            </div>
+            
+            <div class="col-sm-12">
+              <div class="form-group has-feedback">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+              </div>
+            </div>
+            
+            <div class="col-sm-12">
+              <div class="form-group has-feedback">
+                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password">
+              </div>
+            </div>
+            
+          </div>
+          <div class="form-group">
+			<button type="submit" class="buttons login_btn" name="login" value="Login">
+				Continue 
+			</button>
+		</div>
+          <div class="form-info">
+			<p class="text-center p-b-10">By Register I agree to receive emails.</p>
+		</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Header  --> 
+</div>
+
+<!-- banner -->
+<section class="banner">
+        <div class="banner-innerpage Category_banner">
+  <div class="container"> 
+    <!-- Row  -->
+    <div class="row justify-content-center "> 
+      <!-- Column -->
+      <div class="text-center">
+        <h1 class="title">Listings</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Listings</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- Column --> 
+    </div>
+</div>
+      </div>
+</section>
+<!-- End banner --> 
+
+<!-- listing_left_sidebar -->
+<section class="top_listings">
+  <div class="container"> 
+
+   
+    
+    <div class="row m-t-40 margin_top">
+    <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="sidebar-wrapper">
+          <div class="single-sidebar">
+            <form class="search-form" action="#">
+              <input placeholder="Keywords" type="text">
+              <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+          </div>
+          <div class="single-sidebar">
+            <div class="sec-title">
+              <h3 class="all-categories">All Category</h3>
+              <ul class="categories clearfix slide">
+                <li><a href="#">Vehicles (1029)</a></li>
+                <li><a href="#">Electronics (175)</a></li>
+                <li><a href="#">Mobiles (1800)</a></li>
+                <li><a href="#">Furniture (3129)</a></li>
+                <li><a href="#">Fashion (7160)</a></li>
+                <li><a href="#">Real Estate (600)</a></li>
+                <li><a href="#">Animals (460)</a></li>
+                <li><a href="#">Education (540)</a></li>
+                <li><a href="#">Baby products (4300)</a></li>
+                <li><a href="#">Services (12000)</a></li>
+              </ul>
+            </div>
+            <div class="single-sidebar">
+              <div class="sec-title">
+                <h3 class="condition mb-2">Condition</h3>
+                              <div class="form-group form-check condition-slide">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label text-uppercase">New</label>
+              </div>
+              <div class="form-group form-check condition-slide">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label text-uppercase">Used</label>
+              </div>
+              </div>
+              
+            </div>
+            <div class="single-sidebar">
+              <div class="sec-title">
+                <h3 class="post-by mb-2">Posted By</h3>
+                                              <div class="form-group form-check post-slide">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label text-uppercase">Individual</label>
+                  </div>
+                  <div class="form-group form-check post-slide">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label text-uppercase">Dealer</label>
+                  </div>
+                  <div class="form-group form-check post-slide">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label text-uppercase">Reseller</label>
+                  </div>
+                  <div class="form-group form-check post-slide">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label text-uppercase">Manufacturer</label>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="single-sidebar">
+              <div class="sec-title">
+                <h3 class="price_r mb-2">Price Range</h3>
+                  <div class="price-range-block">
+	<div id="slider-range" class="price-filter-range slider-range2"></div>
+
+	<div class="m-t-20 m-b-20">
+	  <input type="text" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" />
+	  <input type="text" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field price-range-field2"/>
+	</div>
+
+</div>
+                </div>
+                </div>
+
+          </div>
+        </div>
+               
+      </div>
+   <div class="col-md-9 col-sm-12 col-xs-12">   
+ <div class="row">
+ <div class="col-md-12 col-sm-12 col-xs-12 m-b-10">
+        <div class="listing-select-parts d-flex justify-content-between">
+          <div class="listing-select-head-left d-inline-block">
+            <h3> Showing ( 1-12 ccars of 7,371 cars  ) </h3>
+          </div>
+          <div class="listing-select-head-right d-inline-block ">
+            <p class="d-inline-block px-3"> View </p>
+            <span class="d-inline-block bars px-2"><a href="#"><i class="fa fa-list"></i></a></span>
+            <span class="d-inline-block bars px-2"><a href="#"><i class="fa fa-th"></i></a></span> 
+            <div class="sort_by d-inline-block pl-3">
+            <form>
+              <div class="form-group">
+                <select class="form-control">
+                  <option>Short by</option>
+                  <option>popular</option>
+                  <option>prize</option>
+                  <option>relivante</option>
+                  <option>offers</option>
+                </select>
+              </div>
+            </form>
+            </div> </div>
+            </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-1.png" alt="Classified Plus">
+            <div class="featured-new bg_warning1"> <a href="#"> New </a> </div>
+          </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Mobile</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Smartphone for sele</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-2.png" alt="Classified Plus"> </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Fashion</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark-o"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Cloth for sele</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-9.png" alt="Classified Plus">
+            
+          </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Vehicles</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Renger cycle for sele</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-10.png" alt="Classified Plus"> 
+          <div class="discount bg_warning2"> <a href="#"> Opening now </a> </div>
+          </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between">
+              <div class="heading"> <a href="#">Job</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark-o"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Job for web designer</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-11.png" alt="Classified Plus">
+          </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Real Estate</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Luxury house for sele</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-13.png" alt="Classified Plus">
+          </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Fashion</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Ladies sandal for sele</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-14.png" alt="Classified Plus"> </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Education</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark-o"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>New courses for students</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-15.png" alt="Classified Plus">
+            <div class="discount"> <a href="#"> Discount 30% </a> </div>
+            <div class="featured-price"> <a href="#"> $550.00 </a> </div>
+          </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Matrimony</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>jewellery for sele</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-16.png" alt="Classified Plus"> </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Vehicles</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Car BMW for sales</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+            
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-18.png" alt="Classified Plus"> </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Furniture</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark-o"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Bed sheet for sele</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-19.png" alt="Classified Plus">
+          </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Baby products</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Bed sheet for sele</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-12.png" alt="Classified Plus"> </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Mobile</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Smartphone for sele</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-20.png" alt="Classified Plus"> </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Animals</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Cat for sales</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-17.png" alt="Classified Plus">
+            <div class="featured-new bg_warning"> <a href="#"> New </a> </div>
+          </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Matrimony</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>jewellery for sele</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+        <div class="featured-parts rounded m-t-30">
+          <div class="featured-img"> <img class="img-fluid rounded-top" src="images/Featured-img-4.png" alt="Classified Plus"> </div>
+          <div class="featured-text">
+            <div class="text-top d-flex justify-content-between ">
+              <div class="heading"> <a href="#">Animals</a> </div>
+              <div class="book-mark"><a href="#"><i class="fa fa-bookmark"></i></a></div>
+            </div>
+            <div class="text-stars m-t-5">
+              <p>Greyhounds Dogs for sales</p>
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            <div class="featured-bottum m-t-30">
+              <ul class="d-flex justify-content-between list-unstyled m-b-20">
+                <li><a href="#"><i class="fa fa-map-marker"></i> East 7th street 98 </a></li>
+                <li><a href="#"><i class="fa fa-heart-o"></i> Save</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-12">
+      <button class="view-btn hvr-pulse-grow" type="submit" value="button">View all</button>
+      </div>
+
+    </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- End listing_left_sidebar --> 
+
+<!-- App_Store -->
+<section class="app_store m-t-50">
+  <div class="container"> 
+    <!-- Row  -->
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <h2 class="title">Download on App Store</h2>
+        <div class="clearfix"></div>
+        <h6 class="subtitle">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</h6>
+      </div>
+    </div>
+    <!-- Row  -->
+    <div class="row">
+      <div class="app_parts ">
+        <button class="app-btn btn" type="submit" value="butten"><i class="fa fa-apple app-icon "></i> Apple Store </button>
+        <button class="app-btn btn" type="submit" value="butten"><i class="fa fa-android app-icon"></i> Apple Store </button>
+        <button class="app-btn btn" type="submit" value="butten"><i class="fa fa-windows app-icon"></i> Apple Store </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End App_Store -->
+
+
+
+
+<!-- Footer -->
+<footer class="footer_all">
+  <div class="footer footer p-t-40">
+    <div class="container spacer b-t">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 m-b-30">
+          <h3 class="mb-3"> <img class="img-fluid" src="images/footer-logo.png" alt="footer-logo"></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc est justo, aliquam nec tempor fermentum, commodo et libero. Quisque et rutrum arcu. Vivamus dictum tincidunt magna id euismod. Nam sollicitudin mi quis orci lobortis feugiat.</p>
+          <ul class="list-unstyled d-flex p-0 soical-icon m-t-20">
+                          <li class="mr-2"><a href="#"><i class="fa fa-facebook-f"></i> </a></li>
+                          <li class="mr-2"><a href="#"><i class="fa fa-twitter"></i> </a></li>
+                          <li class="mr-2"><a href="#"><i class="fa fa-pinterest"></i> </a></li>
+                          <li class="mr-2"><a href="#"><i class="fa fa-google-plus"></i> </a></li>
+                          <li class="active"><a href="#"><i class="fa fa-linkedin"></i> </a></li>
+                        </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 m-b-30">
+          <h3 class="mb-3">Quik Links </h3>
+          <ul class="p-0">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">All Cities</a></li>
+          <li><a href="#">Help & Support</a></li>
+          <li><a href="#">Advertise With Us</a></li>
+          <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 m-b-30">
+          <h3 class="mb-3">Tips And help</h3>
+          <ul class="p-0">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Classified</a></li>
+          <li><a href="#">Classified Blog</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Press Contact</a></li>
+          <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 m-b-30">
+          <h3 class="mb-3">Subscribe us</h3>
+          <p>We have over 15 years of experience
+</p>
+          <p>Our suppoer available to help you 24 hours a day, seven days week
+</p>
+<div class="input-group m-t-20">
+            <input class="form-control" placeholder="Enter Phone" aria-label="Recipient's phone" type="text">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button"><i class="fa fa-check"></i></button>
+            </div>
+            
+          </div>
+          <p class="font-italic">We respect your privacy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="mt-3 mb-3 copyright">&copy;Copyright 2000-2020 cars.com Limited. All rights reserved </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+
+<div class="top_awro pull-right" id="back-to-top" data-original-title="" title=""><i class="fa fa-chevron-up" aria-hidden="true"></i> </div>
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script> 
+<script src="js/owlcarousel/owl.carousel.min.js"></script> 
+<script src="js/custom.js"></script> 
+<script>
+$(document).ready(function(){
+    $(".all-categories").on('click', function(e){
+        $(".slide").slideToggle("slow");
+    });
+});
+
+
+$(document).ready(function(){
+    $(".condition").on('click', function(e){
+        $(".condition-slide").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $(".post-by").on('click', function(e){
+        $(".post-slide").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $(".price_r").on('click', function(e){
+        $(".price-range-block").slideToggle("slow");
+    });
+});
+</script>
+<script src="js/price_range_script.js"></script>
+<script src="js/jquery-ui.js"></script> 
+</body>
+</html>

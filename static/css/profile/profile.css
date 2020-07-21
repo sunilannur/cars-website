@@ -1,0 +1,14 @@
+.phonenumberprofile {
+    width: 118%;
+    margin-left: 2%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .phonenumberprofile {
+        width: 100%;
+        margin-left: 0%;
+
+    }
+
+}

@@ -1,0 +1,149 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Add Car</h3>
+            <div class="box-tools pull-right">
+                <!-- Buttons, labels, and many other things can be placed here! -->
+                <!-- Here is a label for example -->
+            </div>
+            <!-- /.box-tools -->
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <form action="." method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label>Name<span class="required" style="color:red">*</span></label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Detail<span class="required" style="color:red">*</span></label>
+                    <input type="text" name="detail" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Price<span class="required" style="color:red">*</span></label>
+                    <input type="text" name="price" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Model<span class="required" style="color:red">*</span></label>
+                    <select required name="model" class="form-control">
+                        <option value="" selected="" disabled="">Select</option>
+                        {% for each in model %}
+                            <option value="{{ each.id }}">{{ each.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Mileage<span class="required" style="color:red">*</span></label>
+                    <input type="text" name="mileage" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Body_style<span class="required" style="color:red">*</span></label>
+                    <select required name="body_style" class="form-control">
+                        <option value="" selected="" disabled="">Select</option>
+                        {% for each in body_style %}
+                            <option value="{{ each.id }}">{{ each.name }}</option>
+                        {% endfor %}
+                    </select></div>
+
+                <div class="form-group">
+                    <label>Year<span class="required" style="color:red">*</span></label>
+                    <input type="text" name="year" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Transmission<span class="required" style="color:red">*</span></label>
+                    <select required name="transmission" class="form-control">
+                        <option value="" selected="" disabled="">Select</option>
+                        {% for each in transmission %}
+                            <option value="{{ each.id }}">{{ each.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Exterior_color<span class="required" style="color:red">*</span></label>
+                    <select required name="exterior_color" class="form-control">
+                        <option value="" selected="" disabled="">Select</option>
+                        {% for each in exterior_color %}
+                            <option value="{{ each.id }}">{{ each.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Interior_color<span class="required" style="color:red">*</span></label>
+                    <select required name="interior_color" class="form-control">
+                        <option value="" selected="" disabled="">Select</option>
+                        {% for each in interior_color %}
+                            <option value="{{ each.id }}">{{ each.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Drivetrain<span class="required" style="color:red">*</span></label>
+                    <select required name="drive_train" class="form-control">
+                        <option value="" selected="" disabled="">Select</option>
+                        {% for each in drive_train %}
+                            <option value="{{ each.id }}">{{ each.name }}</option>
+                        {% endfor %}
+                    </select></div>
+
+                <div class="form-group">
+                    <label>Cylinder_count<span class="required" style="color:red">*</span></label>
+                    <select required name="cylinder_count" class="form-control">
+                        <option value="" selected="" disabled="">Select</option>
+                        {% for each in cylinder_count %}
+                            <option value="{{ each.id }}">{{ each.name }}</option>
+                        {% endfor %}
+                    </select></div>
+
+                <div class="form-group">
+                    <label>Seller Type<span class="required" style="color:red">*</span></label>
+                    <select required name="seller_type" class="form-control">
+                        <option value="" selected="" disabled="">Select</option>
+                        {% for each in seller_type %}
+                            <option value="{{ each.id }}">{{ each.name }}</option>
+                        {% endfor %}
+                    </select></div>
+
+                <div class="form-group">
+                    <label>Fuel<span class="required" style="color:red">*</span></label>
+                    <select required name="fuel" class="form-control">
+                        <option value="" selected="" disabled="">Select</option>
+                        {% for each in fuel %}
+                            <option value="{{ each.id }}">{{ each.name }}</option>
+                        {% endfor %}
+                    </select></div>
+
+                <div class="form-group">
+                    <label>Phone<span class="required" style="color:red">*<small>Eg:+917865438976</small></span></label>
+                    <input type="text" name="phone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Image</label>
+                    <input type="file" name="car_image" class="form-control">
+                </div>
+
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,191 @@
+.SignUpText {
+    font-size: large;
+}
+
+.showpassword {
+    position: absolute;
+    top: 32%;
+    left: 94%;
+    background-color: transparent;
+    width: 25px;
+    z-index: 2;
+}
+
+.loginusername {
+    font-size: 16px;
+    height: 40px;
+}
+
+.buttoncolor {
+    background-color: red !important;
+    border-color: black !important;
+
+}
+
+.loginwidth {
+    width: 30% !important;
+
+}
+
+.signupwidth {
+    width: 30% !important;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .signupwidth {
+        width: 52% !important;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .signupwidth {
+        width: 70% !important;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+    .signupwidth {
+        width: 71% !important;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .signupwidth {
+        width: 88% !important;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .loginwidth {
+        width: 52% !important;
+    }
+
+    .showpassword {
+        left: 91%;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .loginwidth {
+        width: 70% !important;
+    }
+
+    .showpassword {
+        left: 89%;
+    }
+
+}
+
+@media only screen and (max-width: 414px) {
+    .loginwidth {
+        width: 71% !important;
+    }
+
+    .showpassword {
+        left: 89%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .loginwidth {
+        width: 55% !important;
+    }
+
+    .showpassword {
+        left: 87%;
+    }
+
+}
+
+.nav-linkhome {
+    padding: .5rem 1rem;
+}
+
+.namepaddinghome {
+    padding-left: 23%;
+}
+
+.username {
+    color: black;
+}
+
+.nav-link {
+    font-size: 1.15rem !important;
+}
+
+.profile-nav {
+    padding-right: 4% !important;
+    width: 30% !important;
+
+}
+
+.profile-nav li {
+    padding: 0 2% !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .profile-nav {
+        padding-right: 4% !important;
+        width: 30% !important;
+
+    }
+
+}
+
+.profile-nac-li {
+    width: 20% !important;
+}
+
+.home {
+    font-family: Verdana, Arial, sans-serif !important;
+}
+
+.loginform {
+    width: 24%;
+    margin: 7% auto;
+}
+
+.form-mobileprefix {
+    position: absolute;
+    padding: 10px 13px 13px;
+    color: #999;
+    line-height: 19px;
+}
+
+.phonepadding {
+    padding-left: 49px;
+
+}
+
+.managemycar {
+    width: 19%;
+
+    padding-right: 23%;
+}
+
+.btn-managecar {
+    background-color: blue !important;
+    border-color: blue !important;
+}
+
+.btn-manage {
+    color: white !important;
+}
+
+.imagesize {
+    width: 73% !important;
+}
+
+.image-height {
+    max-height: 20vh !important;
+    min-height: 19vh !important;
+
+}
+

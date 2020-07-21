@@ -1,0 +1,79 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Transmission Data List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th> Name</th>
+                                <th>Name EN</th>
+                                <th>Details</th>
+
+                            </tr>
+                            </thead>
+                            {% for each in transmission_list %}
+                            <tbody>
+
+                            <tr>
+                                <td>{{ each.name }}</td>
+                                <td>{{ each.name_en }}
+                                </td>
+
+                                <td><a href="#"> View</a></td>
+                            </tr>
+
+                            </tbody>
+                            {% endfor %}
+
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% block script %}
+<!--<script src="../../plugins/jquery/jquery.min.js"></script>-->
+<!--&lt;!&ndash; Bootstrap 4 &ndash;&gt;-->
+<!--<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+<!--&lt;!&ndash; DataTables &ndash;&gt;-->
+<!--<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>-->
+<!--<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>-->
+<!--<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>-->
+<!--<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>-->
+<!--&lt;!&ndash; AdminLTE App &ndash;&gt;-->
+<!--<script src="../../dist/js/adminlte.min.js"></script>-->
+<!--&lt;!&ndash; AdminLTE for demo purposes &ndash;&gt;-->
+<!--<script src="../../dist/js/demo.js"></script>-->
+<!--<script>-->
+<!--$(function () {-->
+<!--$("#example1").DataTable({-->
+<!--"responsive": true,-->
+<!--"autoWidth": false,-->
+<!--});-->
+<!--$('#example2').DataTable({-->
+<!--"paging": true,-->
+<!--"lengthChange": false,-->
+<!--"searching": false,-->
+<!--"ordering": true,-->
+<!--"info": true,-->
+<!--"autoWidth": false,-->
+<!--"responsive": true,-->
+<!--});-->
+<!--});-->
+<!--</script>-->
+{% endblock %}
+
+{% endblock %}

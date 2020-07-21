@@ -1,0 +1,48 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Body Data List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th> Name</th>
+                                <th>Name EN</th>
+                                <th>Details</th>
+
+                            </tr>
+                            </thead>
+                            {% for each in body_list %}
+                            <tbody>
+
+                            <tr>
+                                <td>{{ each.name }}</td>
+                                <td>{{ each.name_en }}
+                                </td>
+
+                                <td><a href="#"> View</a></td>
+                            </tr>
+
+                            </tbody>
+                            {% endfor %}
+
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
