@@ -2,7 +2,7 @@ django==2.2.6
 psycopg2-binary==2.8.3
 django-phonenumber-field
 phonenumbers
-pillow==5.4.1
+pillow==9.0.1
 django-versatileimagefield==1.10
 python-resize-image
 django-widget-tweaks
